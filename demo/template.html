@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title></title>
+          <!-- Meta tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />  <!-- w3c recomends this meta tag  -->
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />  <!-- w3c recomends this meta tag  -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="copyright" content="" />
+	<meta name="author" content="" />
+	<meta name="rating" content="general" />
+	<meta name="robots" content="all" />
+        <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	    <!-- Javascripts -->
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/scroll-nav.js"></script>
+    <script language="javascript" type="text/javascript">
+    		$(document).ready(function(){
+				$(".scrolly").stickyNav();
+				
+				// example of destroying the plugin 
+				$(".doSomething").click(function(){
+					$(".scrolly").stickyNav("destroy");
+				});
+				
+			});
+    </script>
+
+</head>
+
+<body>
+
+      <div id="wrap">
+			
+			<nav class="scrolly">
+				<ul>
+					<li><a href="">nav item 1</a></li>
+					<li><a href="">nav item 2</a></li>
+					<li><a href="">nav item 3</a></li>
+					<li><a href="">nav item 4</a></li>
+					<li><a href="">nav item 5</a></li>
+					<li><a href="">nav item 6</a></li>
+				</ul>
+			</nav>
+			
+			<div style="margin-top:100px">
+				<input type="button" class="doSomething" value="destroy the fixed position" />
+			</div>
+			
+      </div>  <!-- end of wrap div -->
+      
+</body>
+</html>

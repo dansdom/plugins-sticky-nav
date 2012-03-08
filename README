@@ -1,4 +1,1 @@
-This is a second attempt at a plugin template that is more inline with the recommendations of the jQuery team.
-http://docs.jquery.com/Plugins/Authoring
-
-My old template was too limiting and as a result I will be introducing the new architecture to all of them in good time. 
+This is a quick plugin to replicate some of the jQuery scrollSpy plugin features. I may come back to this and add more functionality.
